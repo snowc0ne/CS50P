@@ -17,14 +17,14 @@ def convert(time):
     # If we did not include the +1 in time.index(":")+1: then we would get the colon as well. So if the time is 7:30, the minutes would be :30. The colon is at index 1, so the rest of the string after the colon is :30. We do not want the colon, so we need to skip it by adding 1 to the index.
     time = hours + minutes
 
-    if time >= 0 and time < 12:
+    if time >= 5 and time < 12:
         print("Breakfast")
     elif time >= 12 and time < 18:
         print("Lunch")
     elif time >= 18 and time < 24:
         print("Dinner")
     else:
-        print("Invalid time")
+        print("not meal time")
 
 
 if __name__ == "__main__":
