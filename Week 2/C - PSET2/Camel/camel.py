@@ -11,7 +11,7 @@ def main():
     for char in camel_case:
         # If the character is uppercase, add an underscore followed by the lowercase version of the character
         if char.isupper():
-            snake_case += "_" + char.lower()
+            snake_case += "_" + char.lower() # += adds and assigns the value to snake_case. Since the logic in this has the "_" before the char.lower(), it will add an underscore before the lowercase version of the character.
         # Otherwise, add the character as is
         else:
             snake_case += char
